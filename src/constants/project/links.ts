@@ -1,0 +1,1 @@
+export const RBA_LINK = "https://rba-role-next.vercel.app/vadam/rba/account"

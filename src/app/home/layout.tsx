@@ -18,7 +18,7 @@ export default function HomeLayout({
           <div className="flex justify-center mb-10">
             <CustomeTabs tabs={INFO_TABS}/>
           </div>
-          <div className="sm:flex mt-5 md:flex justify-center">
+          <div className="sm:flex mt-5 md:flex justify-center pb-5">
             {children}
           </div>
         </div>

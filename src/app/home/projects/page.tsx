@@ -7,7 +7,7 @@ export default function ProjectsPage () {
 
   return (
     <>
-      <div className="sm: mt-5">
+      <div className="">
         {PROJECTS.map((project) => (
           <CustomeCard
             key={project.key}

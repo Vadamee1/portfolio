@@ -6,7 +6,7 @@ export default function TechnologiesPage () {
 
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-10 h-full">
         {TECHNOLOGIES.map((tech) => (
           <CustomeCard 
             key={tech.key}

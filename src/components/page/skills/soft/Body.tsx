@@ -5,7 +5,7 @@ interface Props {
   skill: ItemsSection[] 
 }
 
-export default function BodySkills ({skill}: Props) {
+export default function BodySoft ({skill}: Props) {
 
   return (
     <>

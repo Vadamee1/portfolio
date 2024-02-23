@@ -11,10 +11,10 @@ export default function HomeLayout({
   return (
     <>
       <div className="md:flex h-full" style={{minHeight: "100vh"}}>
-        <div className="sm: ml-5 mr-5 mb-5 md:flex items-center">
+        <div className="sm: mt-5 ml-5 mr-5 mb-5 md:flex items-center">
           <SideBar/>
         </div>
-        <div className="flex-1 mr-5 ml-5 md:mt-auto mb-auto">
+        <div className="flex-1 mr-5 ml-5 md: mt-48">
           <div className="flex justify-center mb-10">
             <CustomeTabs tabs={INFO_TABS}/>
           </div>

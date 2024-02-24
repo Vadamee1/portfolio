@@ -1,17 +1,14 @@
 import { CustomeListBox } from "@/components/custom/CustomeListBox";
-import { ItemsSection } from "@/interfaces/portfolio/skills";
+import { Frameworks } from "@/interfaces/portfolio/skills";
 
 interface Props {
-  skill: ItemsSection[] 
+  skill?: Frameworks[];
 }
 
-export default function BodySoft ({skill}: Props) {
-
+export default function BodySoft({ skill }: Props) {
   return (
     <>
-      <div className="">
-        <CustomeListBox data={skill}/>
-      </div>
+      <div className="">{skill ? <CustomeListBox data={skill} /> : ""}</div>
     </>
-  )
+  );
 }

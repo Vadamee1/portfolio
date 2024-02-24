@@ -1,48 +1,42 @@
-import { CustomSwitch } from "@/components/custom/CustomSwitch"
-import { CustomeCard } from "@/components/custom/CustomeCard"
-import { SKILLS } from "@/constants/skils"
-import { TECHNOLOGIES } from "@/constants/technologies"
-import BodySoft from "./soft/Body"
-import HeaderSoft from "./soft/Header"
-import { BodyHard } from "./hard/Body"
-import { FooterHard } from "./hard/Footer"
-import { Dispatch, SetStateAction } from "react"
+import { CustomeCard } from "@/components/custom/CustomeCard";
+import { SKILLS } from "@/constants/skills";
+import { BodyHard } from "./hard/Body";
+import { FooterHard } from "./hard/Footer";
+import { CustomPopover } from "@/components/custom/CustomPopover";
+import BodySoft from "./soft/Body";
 
-interface Props {
-  isSelected?: boolean
-}
-
-export const Skills = ({isSelected}: Props) => {
-
+export const Skills = () => {
   return (
     <>
-      <div>
-        {
-          isSelected ? (
-            <div className="md:flex gap-10">
-              {SKILLS.map((skill) => (
-                <CustomeCard
-                  key={skill.key}
-                  body={<BodySoft skill={skill.items} />}
-                  header={<HeaderSoft title={skill.section}/>}
-                  isBlurred/>
-              ))}
-            </div>
-          ) :
-          (
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-10 h-full">
-              {TECHNOLOGIES.map((tech) => (
-                <CustomeCard 
-                  key={tech.key}
-                  body={<BodyHard href={tech.href} />}
-                  footer={<FooterHard name={tech.name} />}
-                  isBlurred={true}
-                />
-              ))}
-            </div>
-          )
-        }
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-10 h-full">
+        {SKILLS.map((tech) => (
+          <>
+            {tech.frameworks ? (
+              <CustomPopover
+                key={tech.key}
+                color="default"
+                backdrop="blur"
+                trigger={
+                  <CustomeCard
+                    body={<BodyHard href={tech.href} />}
+                    footer={<FooterHard name={tech.name} />}
+                    isBlurred={true}
+                    isPressable
+                  />
+                }
+                content={<BodySoft skill={tech.frameworks} />}
+              />
+            ) : (
+              <CustomeCard
+                body={<BodyHard href={tech.href} />}
+                footer={<FooterHard name={tech.name} />}
+                isBlurred={true}
+                isPressable
+              />
+            )}
+          </>
+        ))}
       </div>
     </>
-  )
-}
+  );
+};

@@ -1,6 +1,7 @@
 import { Link } from "@nextui-org/react";
 import { CustomeButton } from "@/components/custom/CustomeButton";
 import { CustomeImage } from "@/components/custom/CustomeImage";
+import { SIDEBARPHOTO } from "@/constants/photo";
 
 export const BasicInfo = () => {
   return (
@@ -9,7 +10,7 @@ export const BasicInfo = () => {
         <div className="flex justify-center mt-3">
           <CustomeImage
             alt="User image"
-            src="/images/Cat.jpg"
+            src={SIDEBARPHOTO}
             width={300}
             height={300}
           />

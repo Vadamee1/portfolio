@@ -15,12 +15,6 @@ export const SKILLS: HardSkills[] = [
     key: 3,
     name: "Javascript",
     href: "/images/skills/JavaScript.svg",
-    frameworks: [
-      {
-        key: 1,
-        content: "Vue",
-      },
-    ],
   },
   {
     key: 4,
@@ -36,12 +30,6 @@ export const SKILLS: HardSkills[] = [
     key: 6,
     name: "Postgresql",
     href: "/images/skills/Postgresql.png",
-    frameworks: [
-      {
-        key: 1,
-        content: "Prisma.io",
-      },
-    ],
   },
   {
     key: 7,
@@ -52,41 +40,15 @@ export const SKILLS: HardSkills[] = [
     key: 8,
     name: "React",
     href: "/images/skills/React.png",
-    frameworks: [
-      {
-        key: 1,
-        content: "React router",
-      },
-      {
-        key: 2,
-        content: "MaterialUi",
-      },
-    ],
   },
   {
     key: 9,
-    name: "Next.js",
-    href: "/images/skills/Next.png",
-    frameworks: [
-      {
-        key: 1,
-        content: "NextAuth",
-      },
-      {
-        key: 2,
-        content: "NextUi",
-      },
-    ],
+    name: "Prisma.io",
+    href: "/images/skills/Prisma.png",
   },
   {
     key: 10,
-    name: "PHP",
-    href: "/images/skills/PHP.png",
-    frameworks: [
-      {
-        key: 1,
-        content: "Laravel 8",
-      },
-    ],
+    name: "Next.js",
+    href: "/images/skills/Next.png",
   },
 ];

@@ -4,7 +4,7 @@ interface Props {
   title: string 
 }
 
-export default function HeaderSkills ({title}: Props) {
+export default function HeaderSoft ({title}: Props) {
 
   return (
     <>

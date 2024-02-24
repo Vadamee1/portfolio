@@ -1,12 +1,13 @@
-export interface  SkillsType {
-  key: string
-  section: string
-  className?: string
-  items: ItemsSection[]
+export interface HardSkills {
+  key: number;
+  name: string;
+  href: string;
+  frameworks?: Frameworks[];
+  description?: string;
 }
 
-export interface ItemsSection {
-  key: string
-  content: string
-  className?: string
+export interface Frameworks {
+  key: number;
+  content: string;
+  className?: string;
 }

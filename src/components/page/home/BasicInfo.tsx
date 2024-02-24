@@ -7,7 +7,7 @@ export const BasicInfo = () => {
   return (
     <>
       <div className="grid gap-5">
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-3">
           <CustomeImage
             alt="User image"
             src={SIDEBARPHOTO}
@@ -29,13 +29,12 @@ export const BasicInfo = () => {
             <CustomeButton
               isIconOnly
               size="lg"
-              color="primary"
               link={Link}
               href="https://github.com/Vadamee1"
             >
               <CustomeImage
                 alt="GitHub"
-                src="/images/GitHub.png"
+                src="/images/contact/GitHub.png"
                 width={50}
                 height={50}
               />
@@ -50,7 +49,7 @@ export const BasicInfo = () => {
             >
               <CustomeImage
                 alt="Linkdln"
-                src="/images/LinkedIn.png"
+                src="/images/contact/LinkedIn.png"
                 width={50}
                 height={50}
               />

@@ -1,16 +1,15 @@
-import { CustomeImage } from "@/components/custom/CustomeImage";
+import { CustomImage } from "@/components/custom/CustomImage";
 import { ProjectType } from "@/interfaces/portfolio/project";
 
 interface Props {
-  data: ProjectType
+  data: ProjectType;
 }
 
-export default function BodyProjects ({data}: Props) {
-
+export default function BodyProjects({ data }: Props) {
   return (
     <>
       <div className="">
-        <CustomeImage 
+        <CustomImage
           alt={data.title}
           src={data.src}
           height={600}
@@ -19,5 +18,5 @@ export default function BodyProjects ({data}: Props) {
         />
       </div>
     </>
-  )
+  );
 }

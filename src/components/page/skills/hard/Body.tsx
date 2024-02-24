@@ -1,21 +1,15 @@
-import { CustomeImage } from "@/components/custom/CustomeImage"
+import { CustomImage } from "@/components/custom/CustomImage";
 
 interface BodyProps {
-  href: string
+  href: string;
 }
 
-export const BodyHard = ({href}: BodyProps) => {
-
+export const BodyHard = ({ href }: BodyProps) => {
   return (
     <>
       <div>
-        <CustomeImage 
-          alt="Technology"
-          src={href}
-          height={100}
-          width={100}
-        />
+        <CustomImage alt="Technology" src={href} height={100} width={100} />
       </div>
     </>
-  )
-}
+  );
+};

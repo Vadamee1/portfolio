@@ -1,13 +1,12 @@
-import { CustomeCard } from "@/components/custom/CustomeCard"
-import { BasicInfo } from "./BasicInfo"
+import { CustomCard } from "@/components/custom/CustomCard";
+import { BasicInfo } from "./BasicInfo";
 
 export const SideBar = () => {
-
   return (
     <>
       <div className="">
-        <CustomeCard body={<BasicInfo/>} isBlurred={true} />
+        <CustomCard body={<BasicInfo />} isBlurred={true} />
       </div>
     </>
-  )
-}
+  );
+};

@@ -1,6 +1,6 @@
 import { Link } from "@nextui-org/react";
-import { CustomeButton } from "@/components/custom/CustomeButton";
-import { CustomeImage } from "@/components/custom/CustomeImage";
+import { CustomButton } from "@/components/custom/CustomButton";
+import { CustomImage } from "@/components/custom/CustomImage";
 import { SIDEBARPHOTO } from "@/constants/photo";
 
 export const BasicInfo = () => {
@@ -8,7 +8,7 @@ export const BasicInfo = () => {
     <>
       <div className="grid gap-5">
         <div className="flex justify-center mt-3">
-          <CustomeImage
+          <CustomImage
             alt="User image"
             src={SIDEBARPHOTO}
             width={300}
@@ -26,34 +26,34 @@ export const BasicInfo = () => {
         </div>
         <div className="flex justify-center gap-5">
           <div>
-            <CustomeButton
+            <CustomButton
               isIconOnly
               size="lg"
               link={Link}
               href="https://github.com/Vadamee1"
             >
-              <CustomeImage
+              <CustomImage
                 alt="GitHub"
                 src="/images/contact/GitHub.png"
                 width={50}
                 height={50}
               />
-            </CustomeButton>
+            </CustomButton>
           </div>
           <div>
-            <CustomeButton
+            <CustomButton
               isIconOnly
               size="lg"
               link={Link}
               href="https://www.linkedin.com/in/david-hernandez-203969295/"
             >
-              <CustomeImage
+              <CustomImage
                 alt="Linkdln"
                 src="/images/contact/LinkedIn.png"
                 width={50}
                 height={50}
               />
-            </CustomeButton>
+            </CustomButton>
           </div>
         </div>
       </div>

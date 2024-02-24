@@ -1,17 +1,15 @@
 "use client";
 
 import { textCards } from "@/config/fonts";
-import { Frameworks } from "@/interfaces/portfolio/skills";
-import { Listbox, ListboxItem, cn } from "@nextui-org/react";
+import { ListBox } from "@/interfaces/customComponents/listbox";
+import { Listbox, ListboxItem } from "@nextui-org/react";
 import { IoRadioButtonOff } from "react-icons/io5";
 
 interface Props {
-  data: Frameworks[];
+  data: ListBox[];
 }
 
-export const CustomeListBox = ({ data }: Props) => {
-  console.log(data);
-
+export const CustomListBox = ({ data }: Props) => {
   return (
     <Listbox variant="bordered" color="warning" aria-label="Skills">
       {data.map((item) => (

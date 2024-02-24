@@ -1,4 +1,4 @@
-import { CustomeTabs } from "@/components/custom/CustomeTabs";
+import { CustomTabs } from "@/components/custom/CustomTabs";
 import { SideBar } from "@/components/page/home/SideBar";
 import { INFO_TABS } from "@/constants/tabs";
 import { ReactNode } from "react";
@@ -16,7 +16,7 @@ export default function HomeLayout({
         </div>
         <div className="flex-1 mr-5 ml-5 md:mt-auto mb-auto">
           <div className="flex justify-center mb-10">
-            <CustomeTabs tabs={INFO_TABS} />
+            <CustomTabs tabs={INFO_TABS} />
           </div>
           <div className="sm:flex mt-5 md:flex justify-center pb-5">
             {children}

@@ -1,22 +1,21 @@
-import { CustomeCard } from "@/components/custom/CustomeCard";
+import { CustomCard } from "@/components/custom/CustomCard";
 import BodyProjects from "@/components/page/projects/BodyProjects";
 import FooterProjects from "@/components/page/projects/FooterProjects";
 import { PROJECTS } from "@/constants/project/projects";
 
-export default function ProjectsPage () {
-
+export default function ProjectsPage() {
   return (
     <>
       <div className="">
         {PROJECTS.map((project) => (
-          <CustomeCard
+          <CustomCard
             key={project.key}
-            body={<BodyProjects data={project}/>}
-            footer={<FooterProjects/>}
+            body={<BodyProjects data={project} />}
+            footer={<FooterProjects />}
             isBlurred
           />
         ))}
       </div>
     </>
-  )
+  );
 }

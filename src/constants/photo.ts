@@ -1,1 +1,1 @@
-export const SIDEBARPHOTO = "/images/profile/David.jpg";
+export const SIDEBARPHOTO = "/images/Cat.jpg";

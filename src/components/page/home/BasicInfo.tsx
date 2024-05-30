@@ -1,62 +1,23 @@
-import { Link } from "@nextui-org/react";
-import { CustomButton } from "@/components/custom/CustomButton";
-import { CustomImage } from "@/components/custom/CustomImage";
-import { SIDEBARPHOTO } from "@/constants/photo";
+import { nameFont } from "@/config/fonts";
+import ProfileButtons from "./ProfileButtons";
 
-export const BasicInfo = () => {
+export default function BasicInfo() {
   return (
-    <>
-      <div className="grid gap-5">
-        <div className="flex justify-center mt-3">
-          <CustomImage
-            alt="User image"
-            src={SIDEBARPHOTO}
-            width={300}
-            height={300}
-          />
-        </div>
-        <div className="">
-          <p className="hidden md:flex justify-center text-4xl">
-            David Hernández Martínez
-          </p>
-          <p className="flex justify-center text-4xl md:hidden">David</p>
-          <p className="flex justify-center text-4xl md:hidden">Hernández</p>
-          <p className="flex justify-center text-4xl md:hidden">Martínez</p>
-          <p className="flex justify-center text-2xl">Software developer</p>
-        </div>
-        <div className="flex justify-center gap-5">
-          <div>
-            <CustomButton
-              isIconOnly
-              size="lg"
-              link={Link}
-              href="https://github.com/Vadamee1"
-            >
-              <CustomImage
-                alt="GitHub"
-                src="/images/contact/GitHub.png"
-                width={50}
-                height={50}
-              />
-            </CustomButton>
-          </div>
-          <div>
-            <CustomButton
-              isIconOnly
-              size="lg"
-              link={Link}
-              href="https://www.linkedin.com/in/david-hernandez-203969295/"
-            >
-              <CustomImage
-                alt="Linkdln"
-                src="/images/contact/LinkedIn.png"
-                width={50}
-                height={50}
-              />
-            </CustomButton>
-          </div>
-        </div>
+    <div className="grid justify-center mt-5">
+      <div
+        className={`flex gap-1 text-2xl sm:gap-2 sm:text-3xl ${nameFont.className} mr-5 ml-5`}
+      >
+        <span>David</span>
+        <span>Hernández</span>
+        <span>Martínez</span>
       </div>
-    </>
+      <div>
+        <p
+          className={`flex justify-center text-xl sm:text-2xl ${nameFont.className}`}
+        >
+          Software developer
+        </p>
+      </div>
+    </div>
   );
-};
+}

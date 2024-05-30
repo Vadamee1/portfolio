@@ -1,5 +1,4 @@
 import { CustomTabs } from "@/components/custom/CustomTabs";
-import { SideBar } from "@/components/page/home/SideBar";
 import { INFO_TABS } from "@/constants/tabs";
 import { ReactNode } from "react";
 
@@ -11,9 +10,7 @@ export default function HomeLayout({
   return (
     <>
       <div className="md:flex h-full" style={{ minHeight: "100vh" }}>
-        <div className="sm: ml-5 mr-5 mb-5 md:flex items-center">
-          <SideBar />
-        </div>
+        <div className="sm: ml-5 mr-5 mb-5 md:flex items-center"></div>
         <div className="flex-1 mr-5 ml-5 md:mt-auto mb-auto">
           <div className="flex justify-center mb-10">
             <CustomTabs tabs={INFO_TABS} />

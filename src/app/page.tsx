@@ -1,11 +1,9 @@
-import { redirect } from "next/navigation";
+import CardData from "@/components/page/home";
 
 export default function RootPage() {
-
-  redirect('/home/skills')
-
   return (
-    <div>
+    <div className="flex">
+      <CardData />
     </div>
   );
 }

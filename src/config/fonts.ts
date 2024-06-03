@@ -1,4 +1,10 @@
-import { Inter, Lora, Merriweather, Noto_Serif } from "next/font/google";
+import {
+  Inter,
+  Libre_Baskerville,
+  Lora,
+  Merriweather,
+  Noto_Serif,
+} from "next/font/google";
 
 export const inter = Inter({ subsets: ["latin"] });
 
@@ -13,4 +19,9 @@ export const nameFont = Lora({
 
 export const typewriterFont = Noto_Serif({
   subsets: ["latin"],
+});
+
+export const titleFont = Libre_Baskerville({
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });

@@ -1,6 +1,6 @@
 import { HardSkills } from "@/interfaces/portfolio/skills";
 
-export const SKILLS: HardSkills[] = [
+export const HARDSKILLS: HardSkills[] = [
   {
     key: 1,
     name: "HTML",
@@ -52,3 +52,54 @@ export const SKILLS: HardSkills[] = [
     href: "/images/skills/Next.png",
   },
 ];
+
+export const SOFTSKILLS = [
+  {
+    key: 1,
+    name: "Communication skills",
+  },
+  {
+    key: 2,
+    name: "Collaboration",
+  },
+  {
+    key: 3,
+    name: "Conflict resolutions",
+  },
+  {
+    key: 4,
+    name: "Teamwork",
+  },
+  {
+    key: 5,
+    name: "Leadership",
+  },
+];
+
+export const SECONDSOFTSKILLS = [
+  {
+    key: 6,
+    name: "Adaptability",
+  },
+  {
+    key: 7,
+    name: "Flexibility ",
+  },
+  {
+    key: 8,
+    name: "Customer service skills",
+  },
+  {
+    key: 9,
+    name: "Empathy",
+  },
+  {
+    key: 10,
+    name: "Active listening",
+  },
+];
+
+export const hardSkillsText =
+  "I have worked with more technologies than those shown here; however, my greatest experience lies within those shown here and the ones in which I want to specialize";
+export const softSkillsText =
+  "On the other hand, I consider that the soft skills that stand out the most are those found here.";

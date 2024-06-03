@@ -6,7 +6,7 @@ import { Button, Card, CardHeader } from "@nextui-org/react";
 import Typewriter from "typewriter-effect";
 export default function Welcome() {
   return (
-    <Card isBlurred className="w-1/3">
+    <Card isBlurred className="md:w-1/3">
       <CardHeader className="flex justify-end">
         <Button color="warning" variant="ghost">
           About me

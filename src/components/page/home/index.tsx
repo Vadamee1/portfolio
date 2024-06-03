@@ -6,7 +6,7 @@ import Welcome from "./Welcome";
 
 export default function CardData() {
   return (
-    <div className="flex min-h-svh w-screen items-center justify-center gap-10">
+    <div className="grid md:flex h-screen w-screen items-center justify-center gap-10">
       <Card isBlurred>
         <CardBody>
           <CardImage />

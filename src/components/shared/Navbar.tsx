@@ -37,12 +37,12 @@ export default function Navbar() {
           </Link>
         </NavbarItem>
         <NavbarItem className="hidden md:block">
-          <Link href="/" as={NextLink} color="foreground">
+          <Link href="/experience" as={NextLink} color="foreground">
             Experience
           </Link>
         </NavbarItem>
         <NavbarItem className="hidden md:block">
-          <Link href="/" as={NextLink} color="foreground">
+          <Link href="/projects" as={NextLink} color="foreground">
             Projects
           </Link>
         </NavbarItem>
@@ -57,12 +57,12 @@ export default function Navbar() {
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link href="/" as={NextLink} color="foreground">
+          <Link href="/emperience" as={NextLink} color="foreground">
             Experience
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link href="/" as={NextLink} color="foreground">
+          <Link href="/projects" as={NextLink} color="foreground">
             Projects
           </Link>
         </NavbarMenuItem>

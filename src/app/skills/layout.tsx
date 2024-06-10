@@ -17,8 +17,8 @@ export default function RootLayout({
   children: ReactNode;
 }>) {
   return (
-    <div className="flex h-screen justify-center gap-10">
-      <div className="flex items-center">
+    <div className="grid md:flex h-screen justify-center gap-10">
+      <div className="flex items-center justify-center">
         <Card isBlurred className="w-96">
           <CardBody className={`flex ${textCards.className} text-xl gap-4`}>
             <p>{hardSkillsText}</p>
@@ -30,7 +30,7 @@ export default function RootLayout({
         <div className="flex justify-center items-center">
           <RouterTabs />
         </div>
-        <div className="h-1/6">{children}</div>
+        <div className="md:h-1/6">{children}</div>
       </div>
     </div>
   );

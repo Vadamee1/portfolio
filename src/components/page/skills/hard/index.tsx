@@ -6,7 +6,7 @@ import { FooterHard } from "./Footer";
 export const Skills = () => {
   return (
     <>
-      <div className="grid grid-cols-4 md:grid-cols-5 gap-10 h-full">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-10 h-full">
         {HARDSKILLS.map((tech) => (
           <CustomCard
             key={tech.key}

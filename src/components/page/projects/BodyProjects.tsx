@@ -1,5 +1,5 @@
-import { CustomImage } from "@/components/custom/CustomImage";
 import { ProjectType } from "@/interfaces/portfolio/project";
+import { Image } from "@nextui-org/react";
 
 interface Props {
   data: ProjectType;
@@ -7,16 +7,8 @@ interface Props {
 
 export default function BodyProjects({ data }: Props) {
   return (
-    <>
-      <div className="">
-        <CustomImage
-          alt={data.title}
-          src={data.src}
-          height={600}
-          width={450}
-          isZoomed
-        />
-      </div>
-    </>
+    <div className="">
+      <Image alt={data.title} src={data.src} width={600} isZoomed />
+    </div>
   );
 }

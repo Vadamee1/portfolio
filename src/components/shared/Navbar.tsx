@@ -57,7 +57,7 @@ export default function Navbar() {
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link href="/emperience" as={NextLink} color="foreground">
+          <Link href="/experience" as={NextLink} color="foreground">
             Experience
           </Link>
         </NavbarMenuItem>

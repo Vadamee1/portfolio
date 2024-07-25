@@ -4,11 +4,15 @@ import { PROJECTS } from "@/constants/project/projects";
 
 export default function Projects() {
   return (
-    <Card isBlurred className="flex flex-col ">
-      <Image alt={PROJECTS.title} src={PROJECTS.src} width={600} isZoomed />
-      <CardBody>
-        <FooterProjects projectName={PROJECTS.title} href={PROJECTS.href} />
-      </CardBody>
-    </Card>
+    <div className="grid grid-cols-2 gap-5">
+      {PROJECTS.map((project) => (
+        <Card key={project.key} isBlurred className="flex flex-col ">
+          <Image alt={project.title} src={project.src} width={600} isZoomed />
+          <CardBody>
+            <FooterProjects projectName={project.title} href={project.href} />
+          </CardBody>
+        </Card>
+      ))}
+    </div>
   );
 }

@@ -21,7 +21,7 @@ export default function AboutProject() {
         </Button>
       </PopoverTrigger>
       <PopoverContent>
-        <div>Project developed with Next.js</div>
+        <div className="text-3xl" >Project developed with Next.js</div>
       </PopoverContent>
     </Popover>
   );
